@@ -8,9 +8,12 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using FinalProjectSystem.UserControls;
+using System.Data.SqlClient;
 
 namespace FinalProjectSystem
 {
+     
     public partial class Login : Form
     {
         public Login()
@@ -32,7 +35,7 @@ namespace FinalProjectSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
+                string username = txtUsername.Text;
             string password = txtPassword.Text;
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
@@ -43,7 +46,7 @@ namespace FinalProjectSystem
             if (username == "admin" && password == "123")
             {
                 MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Dashboard dashboard = new Dashboard();
+                Main dashboard = new Main();
                 dashboard.Show();
 
             }
