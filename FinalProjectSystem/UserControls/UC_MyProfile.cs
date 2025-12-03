@@ -12,16 +12,7 @@ namespace FinalProjectSystem.UserControls
 {
     public partial class UC_MyProfile : UserControl
     {
-        private static UC_MyProfile _instance;
-        public static UC_MyProfile Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = new UC_MyProfile();
-                return _instance;
-            }
-        }
+      
         public UC_MyProfile()
         {
             InitializeComponent();

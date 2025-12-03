@@ -22,14 +22,32 @@ namespace FinalProjectSystem
         }
         public void LoadUC(UserControl uc)
         {
-            panel2.Controls.Clear();
+            uc.Show();
+            DisplayPanel.Controls.Clear();
             uc.Dock = DockStyle.Fill;
-            panel2.Controls.Add(uc);
+            DisplayPanel.Controls.Add(uc);
+
+        }
+        public void LoadUc(UserControl uc)
+        {
+            uc.Show();
+            DisplayPanel.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            DisplayPanel.Controls.Add(uc);
+            
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
-        private void btnSlide_Click(object sender, EventArgs e)
+        }
+
+        private void btnSlide_Click_1(object sender, EventArgs e)
         {
             if (MenuVertical.Width == 200)
             {
@@ -41,12 +59,31 @@ namespace FinalProjectSystem
             }
         }
 
-        private void btnMinimize_Click(object sender, EventArgs e)
+        private void btnDashboard_Click_1(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Minimized;
+            instance.id = new UC_Dashboard();
+            LoadUC(instance.id);
         }
 
-        private void BtnMaximize_Click(object sender, EventArgs e)
+        private void btnMyProfile_Click(object sender, EventArgs e)
+        {
+            instance.MP = new UC_MyProfile();
+            LoadUc(instance.MP);
+        }
+
+        private void btnSlide_Click(object sender, EventArgs e)
+        {
+            if (MenuVertical.Width == 205)
+            {
+                MenuVertical.Width = 35;
+            }
+            else
+            {
+                MenuVertical.Width = 205;
+            }
+        }
+
+        private void BtnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 this.WindowState = FormWindowState.Maximized;
@@ -54,20 +91,20 @@ namespace FinalProjectSystem
                 this.WindowState = FormWindowState.Normal;
         }
 
+        private void btnMinimize_Click_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Minimized;
+        }
+
         private void BtnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
+        private void btnSalesHistory_Click(object sender, EventArgs e)
         {
-            LoadUC(UC_Dashboard.Instance);
-
-        }
-
-        private void btnMyProfile_Click(object sender, EventArgs e)
-        {
-            LoadUC(UC_MyProfile.Instance);
+            instance.SH = new UC_SalesHistory();
+            LoadUc(instance.SH);
         }
     }
 }

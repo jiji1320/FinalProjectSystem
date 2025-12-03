@@ -12,18 +12,8 @@ namespace FinalProjectSystem.UserControls
 {
     public partial class UC_Dashboard : UserControl
     {
-        private static UC_Dashboard instance;
 
-        public static UC_Dashboard Instance
-        {
-            get
-            {
-                if (instance == null)
-                    instance = new UC_Dashboard();
-                return instance;
-            }
-        }
-
+  
 
         public UC_Dashboard()
         {
@@ -52,26 +42,8 @@ namespace FinalProjectSystem.UserControls
 
         }
 
-        private void btnSlide_Click(object sender, EventArgs e)
-        {
-            if (MenuVertical.Width == 200)
-            {
-                MenuVertical.Width = 35;
-            }
-            else
-            {
-                MenuVertical.Width = 200;
-            }
-        }
+        
 
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void BtnMaximize_Click(object sender, EventArgs e)
-        {
-           
-        }
+       
     }
 }
