@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FinalProjectSystem.UserControls
+namespace FinalProjectSystem
 {
-    public partial class UC_SignOut : UserControl
+    public partial class UC_CreateAccount : UserControl
     {
-        public UC_SignOut()
+        public UC_CreateAccount()
         {
             InitializeComponent();
-        }
-
-        private void UC_SignOut_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

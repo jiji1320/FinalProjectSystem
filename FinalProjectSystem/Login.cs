@@ -22,7 +22,7 @@ namespace FinalProjectSystem
             txtPassword.PlaceholderText = "Password";
             this.txtPassword.UseSystemPasswordChar = true;
         }
-
+        
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -35,7 +35,7 @@ namespace FinalProjectSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-                string username = txtUsername.Text;
+            string username = txtUsername.Text;
             string password = txtPassword.Text;
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
@@ -55,6 +55,11 @@ namespace FinalProjectSystem
                 MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
         }
     }
 }

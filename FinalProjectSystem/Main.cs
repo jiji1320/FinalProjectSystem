@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
@@ -14,12 +15,13 @@ namespace FinalProjectSystem
 {
     public partial class Main : Form
     {
-        
+
         public Main()
         {
             InitializeComponent();
-            
+
         }
+        
         public void LoadUC(UserControl uc)
         {
             uc.Show();
@@ -34,7 +36,7 @@ namespace FinalProjectSystem
             DisplayPanel.Controls.Clear();
             uc.Dock = DockStyle.Fill;
             DisplayPanel.Controls.Add(uc);
-            
+
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -106,5 +108,44 @@ namespace FinalProjectSystem
             instance.SH = new UC_SalesHistory();
             LoadUc(instance.SH);
         }
+
+        private void btnProducts_Click(object sender, EventArgs e)
+        {
+            instance.P = new UC_Products();
+            LoadUc(instance.P);
+        }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            instance.Rep = new UC_Reports();
+            LoadUc(instance.Rep);
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            instance.Cust = new UC_Customers();
+            LoadUc(instance.Cust);
+
+        }
+
+        private void btnMaterials_Click(object sender, EventArgs e)
+        {
+            instance.Mat = new UC_Materials();
+            LoadUc(instance.Mat);
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            instance.SO = new UC_SignOut();
+            LoadUc(instance.SO);
+        }
+        
+  
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
-}
+    }
+

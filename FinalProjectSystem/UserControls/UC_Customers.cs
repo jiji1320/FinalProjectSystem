@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace FinalProjectSystem.UserControls
 {
-    public partial class Customers : UserControl
+    public partial class UC_Customers : UserControl
     {
-        public Customers()
+        public UC_Customers()
         {
             InitializeComponent();
         }
