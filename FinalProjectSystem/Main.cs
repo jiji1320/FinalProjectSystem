@@ -130,7 +130,7 @@ namespace FinalProjectSystem
 
         private void btnMaterials_Click(object sender, EventArgs e)
         {
-            instance.Mat = new UC_Materials();
+            instance.Mat = new UC_Inventory();
             LoadUc(instance.Mat);
         }
 

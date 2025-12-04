@@ -53,6 +53,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="Tshirt.cs" />
     <Compile Include="UserControls\UC_CreateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,11 +95,11 @@
     <Compile Include="UserControls\UC_Reports.Designer.cs">
       <DependentUpon>UC_Reports.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Materials.cs">
+    <Compile Include="UserControls\UC_Inventory.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControls\UC_Materials.Designer.cs">
-      <DependentUpon>UC_Materials.cs</DependentUpon>
+    <Compile Include="UserControls\UC_Inventory.Designer.cs">
+      <DependentUpon>UC_Inventory.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_MyProfile.cs">
       <SubType>UserControl</SubType>
@@ -151,8 +153,8 @@
     <EmbeddedResource Include="UserControls\UC_Reports.resx">
       <DependentUpon>UC_Reports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Materials.resx">
-      <DependentUpon>UC_Materials.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UC_Inventory.resx">
+      <DependentUpon>UC_Inventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_MyProfile.resx">
       <DependentUpon>UC_MyProfile.cs</DependentUpon>
@@ -218,6 +220,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clo-polo-svgrepo-com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\541284159_663719319494290_5991952263611039049_n.jpg" />
+    <None Include="Resources\541284159_663719319494290_5991952263611039049_n1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

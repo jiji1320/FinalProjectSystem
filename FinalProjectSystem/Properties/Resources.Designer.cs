@@ -63,6 +63,16 @@ namespace FinalProjectSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _541284159_663719319494290_5991952263611039049_n {
+            get {
+                object obj = ResourceManager.GetObject("541284159_663719319494290_5991952263611039049_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap align_justify_svgrepo_com {
             get {
                 object obj = ResourceManager.GetObject("align-justify-svgrepo-com", resourceCulture);

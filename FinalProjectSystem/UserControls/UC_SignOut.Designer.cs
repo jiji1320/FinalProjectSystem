@@ -29,57 +29,72 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnYesSignout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnNoSignOut = new Guna.UI2.WinForms.Guna2Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.guna2Button1);
-            this.panel1.Location = new System.Drawing.Point(254, 112);
+            this.panel1.Controls.Add(this.btnNoSignOut);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.btnYesSignout);
+            this.panel1.Location = new System.Drawing.Point(255, 87);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(509, 416);
             this.panel1.TabIndex = 6;
             // 
-            // guna2Button2
+            // label1
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.Location = new System.Drawing.Point(79, 255);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(168, 31);
-            this.guna2Button2.TabIndex = 5;
-            this.guna2Button2.Text = "guna2Button2";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(90, 141);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(345, 25);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Are you sure you want to sign out?";
             // 
-            // guna2Button1
+            // btnYesSignout
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(267, 255);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(168, 31);
-            this.guna2Button1.TabIndex = 4;
-            this.guna2Button1.Text = "guna2Button1";
+            this.btnYesSignout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnYesSignout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnYesSignout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnYesSignout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnYesSignout.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnYesSignout.ForeColor = System.Drawing.Color.White;
+            this.btnYesSignout.Location = new System.Drawing.Point(79, 255);
+            this.btnYesSignout.Name = "btnYesSignout";
+            this.btnYesSignout.Size = new System.Drawing.Size(168, 31);
+            this.btnYesSignout.TabIndex = 5;
+            this.btnYesSignout.Text = "Yes";
+            this.btnYesSignout.Click += new System.EventHandler(this.btnYesSignout_Click);
             // 
-            // UC_SignOut
+            // btnNoSignOut
+            // 
+            this.btnNoSignOut.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnNoSignOut.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnNoSignOut.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnNoSignOut.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnNoSignOut.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnNoSignOut.ForeColor = System.Drawing.Color.White;
+            this.btnNoSignOut.Location = new System.Drawing.Point(267, 255);
+            this.btnNoSignOut.Name = "btnNoSignOut";
+            this.btnNoSignOut.Size = new System.Drawing.Size(168, 31);
+            this.btnNoSignOut.TabIndex = 7;
+            this.btnNoSignOut.Text = "No";
+            this.btnNoSignOut.Click += new System.EventHandler(this.btnNoSignOut_Click);
+            // 
+            // panel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
-            this.Name = "UC_SignOut";
+            this.Name = "panel";
             this.Size = new System.Drawing.Size(1017, 640);
             this.Load += new System.EventHandler(this.UC_SignOut_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -87,7 +102,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnYesSignout;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnNoSignOut;
     }
 }

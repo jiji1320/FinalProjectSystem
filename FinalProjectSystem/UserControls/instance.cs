@@ -22,7 +22,7 @@ namespace FinalProjectSystem.UserControls
 
         public static UC_Customers Cust;
 
-        public static UC_Materials Mat;
+        public static UC_Inventory Mat;
 
         public static UC_SignOut SO;
 
