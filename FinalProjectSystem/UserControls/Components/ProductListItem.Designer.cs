@@ -40,7 +40,7 @@
             // lblProductName
             // 
             this.lblProductName.AutoSize = true;
-            this.lblProductName.Location = new System.Drawing.Point(128, 244);
+            this.lblProductName.Location = new System.Drawing.Point(128, 231);
             this.lblProductName.Name = "lblProductName";
             this.lblProductName.Size = new System.Drawing.Size(104, 16);
             this.lblProductName.TabIndex = 0;
@@ -75,7 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 244);
+            this.label1.Location = new System.Drawing.Point(29, 231);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 16);
             this.label1.TabIndex = 5;

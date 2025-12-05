@@ -43,7 +43,7 @@
             this.panel1.Controls.Add(this.btnYesSignout);
             this.panel1.Location = new System.Drawing.Point(255, 87);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(509, 416);
+            this.panel1.Size = new System.Drawing.Size(524, 416);
             this.panel1.TabIndex = 6;
             // 
             // btnNoSignOut
@@ -56,7 +56,7 @@
             this.btnNoSignOut.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(42)))));
             this.btnNoSignOut.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnNoSignOut.ForeColor = System.Drawing.Color.White;
-            this.btnNoSignOut.Location = new System.Drawing.Point(267, 255);
+            this.btnNoSignOut.Location = new System.Drawing.Point(298, 255);
             this.btnNoSignOut.Name = "btnNoSignOut";
             this.btnNoSignOut.Size = new System.Drawing.Size(168, 31);
             this.btnNoSignOut.TabIndex = 7;
@@ -67,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 142);
+            this.label1.Location = new System.Drawing.Point(83, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(345, 25);
             this.label1.TabIndex = 6;
@@ -83,7 +83,7 @@
             this.btnYesSignout.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(32)))), ((int)(((byte)(42)))));
             this.btnYesSignout.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnYesSignout.ForeColor = System.Drawing.Color.White;
-            this.btnYesSignout.Location = new System.Drawing.Point(78, 255);
+            this.btnYesSignout.Location = new System.Drawing.Point(50, 255);
             this.btnYesSignout.Name = "btnYesSignout";
             this.btnYesSignout.Size = new System.Drawing.Size(168, 31);
             this.btnYesSignout.TabIndex = 5;

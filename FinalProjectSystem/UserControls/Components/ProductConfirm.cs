@@ -33,6 +33,10 @@ namespace FinalProjectSystem.UserControls.Components
             this.price = price;
 
             lblProductName.Text = productName;
+            lblStyleType.Text = styleType;
+            lblSize.Text = size;
+            lblColor.Text = color;
+            lblPrice.Text = price.ToString("C");
         }
 
         private void btnConfirm_Click(object sender, EventArgs e)
