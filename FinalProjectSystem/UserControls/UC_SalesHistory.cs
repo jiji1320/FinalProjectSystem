@@ -46,5 +46,10 @@ namespace FinalProjectSystem.UserControls
                 }
             }
         }
+
+        private void dgvLists_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

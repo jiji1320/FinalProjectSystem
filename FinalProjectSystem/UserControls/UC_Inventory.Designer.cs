@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvProduct = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbSize = new System.Windows.Forms.ComboBox();
+            this.cmbColor = new System.Windows.Forms.ComboBox();
             this.adminAddProducts_clearBtn = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -48,18 +53,13 @@
             this.lblStyleType = new System.Windows.Forms.Label();
             this.txtProductName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbColor = new System.Windows.Forms.ComboBox();
-            this.cmbSize = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.dgvProduct = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtProductID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.adminAddProducts_imageView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -71,12 +71,23 @@
             this.panel1.Size = new System.Drawing.Size(860, 244);
             this.panel1.TabIndex = 5;
             // 
+            // dgvProduct
+            // 
+            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProduct.Location = new System.Drawing.Point(13, 52);
+            this.dgvProduct.Name = "dgvProduct";
+            this.dgvProduct.RowHeadersWidth = 51;
+            this.dgvProduct.RowTemplate.Height = 24;
+            this.dgvProduct.Size = new System.Drawing.Size(831, 177);
+            this.dgvProduct.TabIndex = 2;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(10, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "Product";
             // 
@@ -105,11 +116,53 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtProductID);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(78, 315);
+            this.panel2.Location = new System.Drawing.Point(78, 303);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(860, 285);
             this.panel2.TabIndex = 4;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(99, 161);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(46, 18);
+            this.label8.TabIndex = 27;
+            this.label8.Text = "Size:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(93, 124);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 18);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Color:";
+            // 
+            // cmbSize
+            // 
+            this.cmbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbSize.FormattingEnabled = true;
+            this.cmbSize.Location = new System.Drawing.Point(164, 158);
+            this.cmbSize.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbSize.Name = "cmbSize";
+            this.cmbSize.Size = new System.Drawing.Size(212, 26);
+            this.cmbSize.TabIndex = 25;
+            // 
+            // cmbColor
+            // 
+            this.cmbColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbColor.FormattingEnabled = true;
+            this.cmbColor.Location = new System.Drawing.Point(164, 121);
+            this.cmbColor.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbColor.Name = "cmbColor";
+            this.cmbColor.Size = new System.Drawing.Size(212, 26);
+            this.cmbColor.TabIndex = 24;
             // 
             // adminAddProducts_clearBtn
             // 
@@ -127,7 +180,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.White;
@@ -142,7 +195,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
@@ -157,7 +210,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(7)))), ((int)(((byte)(99)))), ((int)(((byte)(102)))));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(48)))));
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.White;
@@ -221,7 +274,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(516, 161);
+            this.label4.Location = new System.Drawing.Point(518, 154);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 18);
@@ -241,12 +294,12 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(495, 105);
+            this.label6.Location = new System.Drawing.Point(426, 101);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 18);
+            this.label6.Size = new System.Drawing.Size(153, 18);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Price (P):";
+            this.label6.Text = "Price Per Piece(P):";
             // 
             // txtStock
             // 
@@ -309,57 +362,14 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "Product Name:";
             // 
-            // cmbColor
+            // txtProductID
             // 
-            this.cmbColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbColor.FormattingEnabled = true;
-            this.cmbColor.Location = new System.Drawing.Point(164, 121);
-            this.cmbColor.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbColor.Name = "cmbColor";
-            this.cmbColor.Size = new System.Drawing.Size(212, 26);
-            this.cmbColor.TabIndex = 24;
-            // 
-            // cmbSize
-            // 
-            this.cmbSize.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbSize.FormattingEnabled = true;
-            this.cmbSize.Location = new System.Drawing.Point(164, 158);
-            this.cmbSize.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbSize.Name = "cmbSize";
-            this.cmbSize.Size = new System.Drawing.Size(212, 26);
-            this.cmbSize.TabIndex = 25;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(93, 124);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 18);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Color:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(99, 161);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 18);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Size:";
-            // 
-            // dgvProduct
-            // 
-            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduct.Location = new System.Drawing.Point(13, 52);
-            this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.RowHeadersWidth = 51;
-            this.dgvProduct.RowTemplate.Height = 24;
-            this.dgvProduct.Size = new System.Drawing.Size(831, 177);
-            this.dgvProduct.TabIndex = 2;
+            this.txtProductID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtProductID.Location = new System.Drawing.Point(164, 23);
+            this.txtProductID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(212, 24);
+            this.txtProductID.TabIndex = 5;
             // 
             // label2
             // 
@@ -372,30 +382,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Product ID:";
             // 
-            // txtProductID
-            // 
-            this.txtProductID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProductID.Location = new System.Drawing.Point(164, 23);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(4);
-            this.txtProductID.Name = "txtProductID";
-            this.txtProductID.Size = new System.Drawing.Size(212, 24);
-            this.txtProductID.TabIndex = 5;
-            // 
-            // UC_Materials
+            // UC_Inventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Name = "UC_Materials";
+            this.Name = "UC_Inventory";
             this.Size = new System.Drawing.Size(1017, 640);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.adminAddProducts_imageView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
             this.ResumeLayout(false);
 
         }

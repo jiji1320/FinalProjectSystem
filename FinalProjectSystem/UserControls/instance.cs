@@ -12,15 +12,9 @@ namespace FinalProjectSystem.UserControls
         
         //public static UC_CreateAccount CA;
        
-        public static UC_MyProfile MP;
-
         public static UC_SalesHistory SH; 
 
         public static UC_Products P;
-
-        public static UC_Reports Rep;
-
-        public static UC_Customers Cust;
 
         public static UC_Inventory Mat;
 

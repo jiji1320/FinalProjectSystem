@@ -1,0 +1,7 @@
+﻿CREATE TABLE ProductC
+(
+ProductName VARCHAR(50) NOT NULL,
+Color VARCHAR(20) NOT NULL,
+Price DECIMAL(10, 2) NOT NULL,
+Quantity INT NOT NULL,
+);

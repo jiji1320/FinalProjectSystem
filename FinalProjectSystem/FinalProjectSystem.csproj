@@ -90,35 +90,17 @@
     </Compile>
     <Compile Include="UserControls\instance.cs" />
     <Compile Include="UserControls\PasswordHasher.cs" />
-    <Compile Include="UserControls\UC_Customers.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_Customers.Designer.cs">
-      <DependentUpon>UC_Customers.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\UC_Products.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_Products.Designer.cs">
       <DependentUpon>UC_Products.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\UC_Reports.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_Reports.Designer.cs">
-      <DependentUpon>UC_Reports.cs</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\UC_Inventory.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControls\UC_Inventory.Designer.cs">
       <DependentUpon>UC_Inventory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UC_MyProfile.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_MyProfile.Designer.cs">
-      <DependentUpon>UC_MyProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_SalesHistory.cs">
       <SubType>UserControl</SubType>
@@ -163,20 +145,11 @@
     <EmbeddedResource Include="UserControls\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Customers.resx">
-      <DependentUpon>UC_Customers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Products.resx">
       <DependentUpon>UC_Products.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Reports.resx">
-      <DependentUpon>UC_Reports.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Inventory.resx">
       <DependentUpon>UC_Inventory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_MyProfile.resx">
-      <DependentUpon>UC_MyProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_SalesHistory.resx">
       <DependentUpon>UC_SalesHistory.cs</DependentUpon>

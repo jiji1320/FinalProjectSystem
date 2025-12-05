@@ -77,11 +77,7 @@ namespace FinalProjectSystem
             LoadUC(instance.id);
         }
 
-        private void btnMyProfile_Click(object sender, EventArgs e)
-        {
-            instance.MP = new UC_MyProfile();
-            LoadUc(instance.MP);
-        }
+       
 
         private void btnSlide_Click(object sender, EventArgs e)
         {
@@ -123,19 +119,6 @@ namespace FinalProjectSystem
         {
             instance.P = new UC_Products();
             LoadUc(instance.P);
-        }
-
-        private void btnReport_Click(object sender, EventArgs e)
-        {
-            instance.Rep = new UC_Reports();
-            LoadUc(instance.Rep);
-        }
-
-        private void btnCustomers_Click(object sender, EventArgs e)
-        {
-            instance.Cust = new UC_Customers();
-            LoadUc(instance.Cust);
-
         }
 
         private void btnMaterials_Click(object sender, EventArgs e)

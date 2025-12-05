@@ -27,18 +27,19 @@ namespace FinalProjectSystem.UserControls
 
             using (var connection = new System.Data.SqlClient.SqlConnection(DbHelper.LoginConnectionString))
             {
-                //connection.Open();
 
                 var hashPassowrd = PasswordHasher.HashPassword(txtPassword.Text);
 
-                string query = "INSERT INTO Users (Username, Password, Roles) VALUES (@Username, @Password, 'User')";
+                string query = "INSERT INTO Users (Username, Password, Roles) VALUES (@Username, @Password, @Role)";
                 using (var command = new System.Data.SqlClient.SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Username", txtUserName.Text);
                     command.Parameters.AddWithValue("@Password", hashPassowrd);
+                    command.Parameters.AddWithValue("@Role", cbRoles.SelectedItem.ToString());
                     connection.Open();
                     command.ExecuteNonQuery();
                     MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    new Login().Show();
                     this.Close();
 
                 }

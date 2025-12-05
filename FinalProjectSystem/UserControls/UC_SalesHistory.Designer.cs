@@ -34,6 +34,7 @@
             this.Color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Size = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLists)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,12 +47,13 @@
             this.Color,
             this.Size,
             this.Quantity});
-            this.dgvLists.Location = new System.Drawing.Point(65, 74);
+            this.dgvLists.Location = new System.Drawing.Point(53, 137);
             this.dgvLists.Name = "dgvLists";
             this.dgvLists.RowHeadersWidth = 51;
             this.dgvLists.RowTemplate.Height = 24;
-            this.dgvLists.Size = new System.Drawing.Size(705, 472);
+            this.dgvLists.Size = new System.Drawing.Size(890, 431);
             this.dgvLists.TabIndex = 0;
+            this.dgvLists.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLists_CellContentClick);
             // 
             // ProductName
             // 
@@ -88,17 +90,29 @@
             this.Quantity.Name = "Quantity";
             this.Quantity.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 73);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 25);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Sales";
+            // 
             // UC_SalesHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvLists);
             this.Name = "UC_SalesHistory";
-            //this.Size = new System.Drawing.Size(1017, 640);
+            //this.Size = new System.Drawing.Size(1001, 604);
             this.Load += new System.EventHandler(this.UC_SalesHistory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvLists)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -110,5 +124,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Color;
         private System.Windows.Forms.DataGridViewTextBoxColumn Size;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.Label label1;
     }
 }
