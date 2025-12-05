@@ -251,6 +251,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.BackColor = System.Drawing.Color.White;
             this.linkLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Black;
             this.linkLabel1.Location = new System.Drawing.Point(554, 425);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(98, 16);
