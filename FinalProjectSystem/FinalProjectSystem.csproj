@@ -55,12 +55,6 @@
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
     <Compile Include="Tshirt.cs" />
-    <Compile Include="UserControls\UC_CreateAccount.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_CreateAccount.Designer.cs">
-      <DependentUpon>UC_CreateAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginClass.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -76,7 +70,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\Components\ProductConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\Components\ProductConfirm.Designer.cs">
+      <DependentUpon>ProductConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Components\ProductListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Components\ProductListItem.Designer.cs">
+      <DependentUpon>ProductListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\instance.cs" />
+    <Compile Include="UserControls\PasswordHasher.cs" />
     <Compile Include="UserControls\UC_Customers.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -141,8 +154,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControls\UC_CreateAccount.resx">
-      <DependentUpon>UC_CreateAccount.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\Components\ProductConfirm.resx">
+      <DependentUpon>ProductConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Components\ProductListItem.resx">
+      <DependentUpon>ProductListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Customers.resx">
       <DependentUpon>UC_Customers.cs</DependentUpon>

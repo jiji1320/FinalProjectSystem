@@ -26,7 +26,23 @@ namespace FinalProjectSystem.UserControls
 
         private void UC_Dashboard_Load(object sender, EventArgs e)
         {
+            using (var connection = new System.Data.SqlClient.SqlConnection(DbHelper.LoginConnectionString))
+            {
+                connection.Open();
+                string query = "SELECT Username, Roles FROM Users";
+                using (var command = new System.Data.SqlClient.SqlCommand(query, connection))
+                {
+                    var dataReader = command.ExecuteReader();
+                    while (dataReader.Read())
+                    {
+                        int rowIndex = dgvUsers.Rows.Add();
+                        var row = dgvUsers.Rows[rowIndex];
 
+                        row.Cells["Username"].Value = dataReader["Username"].ToString();
+                        row.Cells["Role"].Value = dataReader["Roles"].ToString();
+                    }
+                }
+            }
         }
     }
 }

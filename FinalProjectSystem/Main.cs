@@ -16,12 +16,22 @@ namespace FinalProjectSystem
     public partial class Main : Form
     {
 
+        private static Main _instance = new Main();
+
         public Main()
         {
             InitializeComponent();
 
         }
-        
+
+        public static Main Instance
+        {
+            get
+            {
+                return _instance;
+            }
+        }
+
         public void LoadUC(UserControl uc)
         {
             uc.Show();
@@ -41,7 +51,7 @@ namespace FinalProjectSystem
 
         private void Main_Load(object sender, EventArgs e)
         {
-
+            btnDashboard_Click_1(null, null);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -103,7 +113,7 @@ namespace FinalProjectSystem
             Application.Exit();
         }
 
-        private void btnSalesHistory_Click(object sender, EventArgs e)
+        public void btnSalesHistory_Click(object sender, EventArgs e)
         {
             instance.SH = new UC_SalesHistory();
             LoadUc(instance.SH);

@@ -35,30 +35,62 @@ namespace FinalProjectSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please enter both Username and Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (username == "admin" && password == "123")
-            {
-                MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Main dashboard = new Main();
-                dashboard.Show();
 
-            }
-            else
+            using (SqlConnection conn = new SqlConnection(DbHelper.LoginConnectionString))
             {
-                MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                conn.Open();
+                string query = "SELECT Password FROM Users WHERE Username = @Username";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Username", username);
+                    var result = cmd.ExecuteScalar();
+                    if (result != null)
+                    {
+                        string storedHashedPassword = result.ToString();
+
+                        if (PasswordHasher.VerifyPassword(password, storedHashedPassword))
+                        {
+                            MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Main dashboard = new Main();
+                            dashboard.Show();
+                            Hide();
+                            return;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                }
             }
-            Hide();
+
+            //if (username == "admin" && password == "123")
+            //{
+            //    MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    Main dashboard = new Main();
+            //    dashboard.Show();
+
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
+            //Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            new CreateAccount().Show();
+            this.Hide();
             
         }
     }

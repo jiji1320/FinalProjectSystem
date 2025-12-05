@@ -13,9 +13,14 @@ namespace FinalProjectSystem
     {
         
         public static string ConnectionString =
-            "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\FranciscoNathan\\Documents\\Products.mdf;Integrated Security=True;Connect Timeout=30";
+            "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\FranciscoNathan\\Documents\\FinalP.mdf;Integrated Security=True;Connect Timeout=30";
 
-   
+
+        public static string LoginConnectionString =
+            "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\FranciscoNathan\\Documents\\FinalP.mdf;Integrated Security=True;Connect Timeout=30";
+
+
+
         public static DataTable GetDataTable(string query)
         {
             

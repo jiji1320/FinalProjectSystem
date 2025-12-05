@@ -10,7 +10,7 @@ namespace FinalProjectSystem.UserControls
     {
         public static UC_Dashboard id;
         
-        public static UC_CreateAccount CA;
+        //public static UC_CreateAccount CA;
        
         public static UC_MyProfile MP;
 
