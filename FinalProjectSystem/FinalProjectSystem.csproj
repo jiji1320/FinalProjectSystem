@@ -88,7 +88,7 @@
     <Compile Include="UserControls\CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\instance.cs" />
+    <Compile Include="UserControls\Instance.cs" />
     <Compile Include="UserControls\PasswordHasher.cs" />
     <Compile Include="UserControls\UC_Products.cs">
       <SubType>UserControl</SubType>
@@ -215,6 +215,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\541284159_663719319494290_5991952263611039049_n.jpg" />
+    <None Include="Resources\quit-svgrepo-com1.png" />
+    <None Include="Resources\training-center-svgrepo-com1.png" />
+    <None Include="Resources\clo-polo-svgrepo-com1.png" />
+    <None Include="Resources\grade-center-svgrepo-com1.png" />
     <None Include="Resources\541284159_663719319494290_5991952263611039049_n1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

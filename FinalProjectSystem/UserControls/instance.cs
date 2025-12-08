@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace FinalProjectSystem.UserControls
 {
-    internal class instance
+    internal class Instance
     {
         public static UC_Dashboard id;
         
-        //public static UC_CreateAccount CA;
-       
         public static UC_SalesHistory SH; 
 
         public static UC_Products P;

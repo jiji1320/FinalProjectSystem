@@ -73,25 +73,17 @@ namespace FinalProjectSystem
                 }
             }
 
-            //if (username == "admin" && password == "123")
-            //{
-            //    MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    Main dashboard = new Main();
-            //    dashboard.Show();
-
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Invalid Username or Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-            //Hide();
         }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             new CreateAccount().Show();
             this.Hide();
             
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

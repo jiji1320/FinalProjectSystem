@@ -103,6 +103,16 @@ namespace FinalProjectSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clo_polo_svgrepo_com1 {
+            get {
+                object obj = ResourceManager.GetObject("clo-polo-svgrepo-com1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap column_white {
             get {
                 object obj = ResourceManager.GetObject("column white", resourceCulture);
@@ -153,6 +163,16 @@ namespace FinalProjectSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap grade_center_svgrepo_com1 {
+            get {
+                object obj = ResourceManager.GetObject("grade-center-svgrepo-com1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap grey {
             get {
                 object obj = ResourceManager.GetObject("grey", resourceCulture);
@@ -173,6 +193,16 @@ namespace FinalProjectSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap quit_svgrepo_com1 {
+            get {
+                object obj = ResourceManager.GetObject("quit-svgrepo-com1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap student_management_avatar_people_svgrepo_com {
             get {
                 object obj = ResourceManager.GetObject("student-management-avatar-people-svgrepo-com", resourceCulture);
@@ -186,6 +216,16 @@ namespace FinalProjectSystem.Properties {
         internal static System.Drawing.Bitmap training_center_svgrepo_com {
             get {
                 object obj = ResourceManager.GetObject("training-center-svgrepo-com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap training_center_svgrepo_com1 {
+            get {
+                object obj = ResourceManager.GetObject("training-center-svgrepo-com1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

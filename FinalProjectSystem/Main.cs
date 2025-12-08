@@ -73,35 +73,8 @@ namespace FinalProjectSystem
 
         private void btnDashboard_Click_1(object sender, EventArgs e)
         {
-            instance.id = new UC_Dashboard();
-            LoadUC(instance.id);
-        }
-
-       
-
-        private void btnSlide_Click(object sender, EventArgs e)
-        {
-            if (MenuVertical.Width == 205)
-            {
-                MenuVertical.Width = 35;
-            }
-            else
-            {
-                MenuVertical.Width = 205;
-            }
-        }
-
-        private void BtnMaximize_Click_1(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
-        }
-
-        private void btnMinimize_Click_1(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
+            UserControls.Instance.id = new UC_Dashboard();
+            LoadUC(UserControls.Instance.id);
         }
 
         private void BtnExit_Click(object sender, EventArgs e)
@@ -111,34 +84,28 @@ namespace FinalProjectSystem
 
         public void btnSalesHistory_Click(object sender, EventArgs e)
         {
-            instance.SH = new UC_SalesHistory();
-            LoadUc(instance.SH);
+            UserControls.Instance.SH = new UC_SalesHistory();
+            LoadUc(UserControls.Instance.SH);
         }
 
         private void btnProducts_Click(object sender, EventArgs e)
         {
-            instance.P = new UC_Products();
-            LoadUc(instance.P);
+            UserControls.Instance.P = new UC_Products();
+            LoadUc(UserControls.Instance.P);
         }
 
         private void btnMaterials_Click(object sender, EventArgs e)
         {
-            instance.Mat = new UC_Inventory();
-            LoadUc(instance.Mat);
+            UserControls.Instance.Mat = new UC_Inventory();
+            LoadUc(UserControls.Instance.Mat);
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            instance.SO = new UC_SignOut();
-            LoadUc(instance.SO);
-        }
-        
-  
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            UserControls.Instance.SO = new UC_SignOut();
+            LoadUc(UserControls.Instance.SO);
         }
     }
-    }
+    
+}
 
